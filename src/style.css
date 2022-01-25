@@ -1,0 +1,50 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  font-size: 18px;
+  color: black;
+}
+
+main :any-link,
+header :any-link {
+  display: inline-block;
+  color: inherit;
+  text-decoration: none;
+}
+
+body {
+  height: 100%;
+}
+
+.menu {
+  & ul {
+    list-style-type: none;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    width: 100%;
+    column-gap: 1rem;
+  }
+}
+
+/* .sticky {
+  background-color: red;
+}
+
+input[type='text'] {
+  font-size: 1rem;
+  padding: 0.5rem;
+  width: 100%;
+}
+
+label + .dfield {
+  margin-top: 1rem;
+}
+
+.dfield {
+  width: 100%;
+} */
