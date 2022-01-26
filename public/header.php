@@ -9,9 +9,9 @@
     <?php wp_head() ?>
 </head>
 
-<body>
+<body <?php body_class() ?>>
     <header>
-        <?php wp_page_menu(['show_home' => true]) ?>
+        <!-- <?php wp_page_menu(['show_home' => true]) ?> -->
     </header>
 
     <main>

@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@400;700&display=swap');
+
 * {
   margin: 0;
   padding: 0;
@@ -7,6 +9,8 @@
 :root {
   font-size: 18px;
   color: black;
+  font-family: 'Source Sans Pro', sans-serif;
+  line-height: 1.5rem;
 }
 
 main :any-link,
@@ -18,6 +22,9 @@ header :any-link {
 
 body {
   height: 100%;
+  padding: 1rem;
+  background-color: #4a5056;
+  color: #f8f8f2;
 }
 
 .menu {
@@ -28,6 +35,44 @@ body {
     align-items: center;
     width: 100%;
     column-gap: 1rem;
+  }
+}
+
+body {
+  & ul,
+  & ol {
+    & li {
+      margin-left: 3rem;
+    }
+  }
+}
+
+#fbuilder {
+  & input[type='text'] {
+    box-sizing: border-box;
+    font-size: 1rem;
+    padding: 0.5rem;
+    border-radius: 0.25rem;
+    border: 0;
+  }
+
+  & input[type='radio'] {
+    padding: 1rem;
+  }
+
+  & .message {
+    background-color: #f1fa8c !important;
+    color: #282a36;
+    border: 2px solid #ff79c6 !important;
+    border-radius: 5px;
+    left: unset !important;
+    right: 0;
+  }
+
+  & div.cpefb_error {
+    &::after {
+      background: none !important;
+    }
   }
 }
 
@@ -48,3 +93,15 @@ label + .dfield {
 .dfield {
   width: 100%;
 } */
+
+main {
+  width: 900px;
+  max-width: 100%;
+  margin: auto;
+  display: grid;
+  grid-gap: 1rem;
+  line-height: 1.5rem;
+}
+
+.home {
+}
